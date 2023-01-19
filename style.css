@@ -87,8 +87,49 @@
     background-color: #111;
 }
 
+.container {
+    padding-top: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b5354;
+}
+
+
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+.phoneImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/telephon.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.phone:hover {
+    color: #9ecfe7 !important;
+    transition: .3s linear;
+}
+
 
 @media screen and (max-width: 980px) {
+
     .menu-toggler{
         display:block;
     }
@@ -100,7 +141,6 @@
         background-color: #4b5354;
         top: 0;
         right: -100%;
-        max-width: 400px;
         padding: 80px 50px;
         transition: .3s linear;
     }
@@ -131,5 +171,17 @@
     .menu-toggler.active span:nth-child(3){
         transform: rotate(45deg);
         bottom: 14px;
+    }
+
+    .container {
+        background-color: red;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .phoneImg{
+        display: none;
     }
 }
