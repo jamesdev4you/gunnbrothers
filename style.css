@@ -8,7 +8,7 @@
 
 .navbar{
     position: fixed;
-    background-color: red;
+    background-color: #e9edef;
     width: 100%;
     padding: 0;
     top: 0;
@@ -72,7 +72,7 @@
 
 .sticky {
     background-color: #e9edef;
-    padding: 18px 0;
+    padding: 0px 0;
 }
 
 .sticky .logo {
@@ -88,7 +88,6 @@
 }
 
 .container {
-    padding-top: 185px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +126,125 @@
     transition: .3s linear;
 }
 
+.background-image{
+    background-image: url(assets/tampanew.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.homePage{
+    padding-top: 200px;
+}
+
+.gunnBanner {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 60px;
+}
+
+.gunnUnderBanner{
+    text-align:center;
+    padding-top: 10px;
+
+}
+
+.btn{
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .btn--primary{
+    background:#275ea3;
+    color: white;
+  }
+
+  .btn--primary:hover{
+    background: dodgerblue;
+  }
+
+  .whereWeServe {
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .where-images{
+    width: 50%;
+    background-color: darkmagenta;
+  }
+
+  .where-text{
+    width: 50%;
+    background-color: green
+  }
+
+  .findOut {
+    height: 600px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .findOut-algo{
+    width: 50%;
+    background-color: blue;
+  }
+
+  .ourMission {
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ourMission-text{
+    width: 50%;
+    background-color: red;
+  }
+
+  .footer {
+    background-color: grey;
+    height: 500px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  .Certifications{
+    background-color: rgb(113, 29, 29);
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    height: auto;
+  }
+
+  .Information{
+    background-color: green;
+    display: flex;
+    width: 33.33%;
+    height: auto;
+  }
+
+  .Socials{
+    background-color: orange;
+    display: flex;
+    width: 33.33%;
+    height: auto;
+  }
 
 @media screen and (max-width: 980px) {
 
@@ -173,15 +291,4 @@
         bottom: 14px;
     }
 
-    .container {
-        background-color: red;
-    }
-
-    .phone {
-        display: none;
-    }
-
-    .phoneImg{
-        display: none;
-    }
 }
