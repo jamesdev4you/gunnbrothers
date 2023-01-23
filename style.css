@@ -138,6 +138,7 @@
 
 .homePage{
     padding-top: 200px;
+    background-color: #9ecfe7;
 }
 
 .gunnBanner {
@@ -176,48 +177,124 @@
 
   .whereWeServe {
     height: 600px;
-    background-color: blue;
+    background-color: #9ecfe7;
     display: flex;
     flex-direction: row;
-  }
-
-  .where-images{
-    width: 50%;
-    background-color: darkmagenta;
+    margin-bottom: 50px;
   }
 
   .where-text{
-    width: 50%;
-    background-color: green
+    width: 70%;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #000010;
   }
 
-  .findOut {
+  .where-text h1 {
+    margin-bottom: 80px;
+    font-size: 50px;
+    border-bottom: 5px solid black;
+  }
+
+  .where-text p {
+    padding: 30px;
+    background-color: #e9edef;
+    border-radius: 25px;
+  }
+
+  .whyUs {
     height: 600px;
-    background-color: red;
+    background-color: #9ecfe7;
     display: flex;
     flex-direction: row;
   }
 
-  .findOut-algo{
-    width: 50%;
-    background-color: blue;
+  .whyUs-text{
+    width: 70%;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #000010;
   }
 
-  .ourMission {
-    height: 600px;
-    background-color: blue;
+  .whyUs h1{
+    margin-bottom: 80px;
+    font-size: 50px;
+    border-bottom: 5px solid black;
+  }
+
+  .whyUs p{
+    padding: 30px;
+    background-color: #e9edef;
+    border-radius: 25px;
+  }
+
+  .whyUs-img-background{
+    width: 24.5%;
+    height: 100%;
+    background-color: #e9edef;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-left: 50px;
+  }
+
+  .whyUs-img-background img{
+    border-radius: 25px;
+    border: 1px solid black
+  }
+
+  .ourPrices {
+    height: 750px;
+    background-color: #9ecfe7;
     display: flex;
     flex-direction: row;
+
   }
 
-  .ourMission-text{
-    width: 50%;
-    background-color: red;
+  .ourPrices-text{
+    width: 60%;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #000010;
+  }
+
+  .ourPrices-text h1{
+    margin-bottom: 80px;
+    font-size: 50px;
+    border-bottom: 5px solid black;
+  }
+
+  .ourPrices p{
+    padding: 30px;
+    background-color: #e9edef;
+    border-radius: 25px;
+  }
+
+  .ourPrices img{
+    margin-top: 120px;
+    margin-right: 20px;
+    width: 40%;
+    height: 70%;
+    border-radius: 25px;
+    border: 1px solid black
   }
 
   .footer {
     background-color: grey;
-    height: 500px;
+    height: 200px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -225,24 +302,43 @@
     margin: 0;
   }
 
-  .Certifications{
-    background-color: rgb(113, 29, 29);
+  .basic--info{
+    background-color: #9ecfe7;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     width: 33.33%;
     height: auto;
   }
 
   .Information{
-    background-color: green;
+    background-color: #9ecfe7;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 33.33%;
     height: auto;
   }
 
-  .Socials{
-    background-color: orange;
+  .Information--phone{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Information h3{
+    margin: 5px;
+  }
+
+  .Socials{
+    background-color: #9ecfe7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     width: 33.33%;
     height: auto;
   }
@@ -254,6 +350,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/instagramreal.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  .facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/facebookreal.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  .twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/twitterreal.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  .youtube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/youtubereal.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
   }
 
   form{
