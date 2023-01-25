@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* NavBar */
+
 .navbar{
     position: fixed;
     background-color: #e9edef;
@@ -94,8 +96,6 @@
     background-color: #4b5354;
 }
 
-
-
 .phone {
     display: flex;
     justify-content: center;
@@ -175,122 +175,243 @@
     background: dodgerblue;
   }
 
-  .whereWeServe {
-    height: 600px;
-    background-color: #9ecfe7;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-  }
+/* Home Page */
+.background-image{
+  background-image: url(assets/tampanew.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
 
-  .where-text{
-    width: 70%;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    color: #000010;
-  }
+.introduction{
+  background-color: #0051FE;
+  width: 100%;
+  height: 20px;
+}
 
-  .where-text h1 {
-    margin-bottom: 80px;
-    font-size: 50px;
-    border-bottom: 5px solid black;
-  }
+.introduction2{
+  background-color: #2871F8;
+  width: 100%;
+  height: 20px;
+}
 
-  .where-text p {
-    padding: 30px;
-    background-color: #e9edef;
-    border-radius: 25px;
-  }
+.introduction3{
+  background-color: #4F90F3;
+  width: 100%;
+  height: 20px;
+}
 
-  .whyUs {
-    height: 600px;
-    background-color: #9ecfe7;
-    display: flex;
-    flex-direction: row;
-  }
+.introduction4{
+  background-color: #77B0ED;
+  width: 100%;
+  height: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.introduction5{
+  background-color: #9ecfe7;
+  width: 100%;
+  height: 10px;
+}
 
-  .whyUs-text{
-    width: 70%;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    color: #000010;
-  }
+.testing{
+  text-align: center;
+  position: absolute;
+  padding-top: 100px;
+  font-size: 48px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  .whyUs h1{
-    margin-bottom: 80px;
-    font-size: 50px;
-    border-bottom: 5px solid black;
-  }
+}
+/* Testimonials */
+.testimonial--background{
+  width: 100%;
+  height: 780px;
+  background: url(assets/Untitled\ design\ \(3\).png);
+  background-size: cover;
+  -webkit-background-origin:border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #080808;
+}
 
-  .whyUs p{
-    padding: 30px;
-    background-color: #e9edef;
-    border-radius: 25px;
-  }
+.testimonial--container{
+  position: relative;
+  width: 800px;
+  min-width: 350px;
+  min-height: 250px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
 
-  .whyUs-img-background{
-    width: 24.5%;
-    height: 100%;
-    background-color: #e9edef;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    margin-left: 50px;
-  }
+.testimonial--wrapper{
+  width: 300%; /* 1 card = 100%, then 3card = 300% */
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
 
-  .whyUs-img-background img{
-    border-radius: 25px;
-    border: 1px solid black
-  }
+.testimonial--card{
+  width: 800px;
+  min-height: 100%;
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
 
-  .ourPrices {
-    height: 750px;
-    background-color: #9ecfe7;
-    display: flex;
-    flex-direction: row;
+.testimonial--card--thumb{
+  width: 70%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 
-  }
+.testimonial--card--thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .ourPrices-text{
-    width: 60%;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    color: #000010;
-  }
+.client-name{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 20px;
+  background: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  border-radius: 5px;
+}
 
-  .ourPrices-text h1{
-    margin-bottom: 80px;
-    font-size: 50px;
-    border-bottom: 5px solid black;
-  }
+.testimonial--card--body{
+  width: 120%;
+  min-height: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+  position: relative;
+  padding-bottom: 50px;
+}
 
-  .ourPrices p{
-    padding: 30px;
-    background-color: #e9edef;
-    border-radius: 25px;
-  }
+.review{
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+}
 
-  .ourPrices img{
-    margin-top: 120px;
-    margin-right: 20px;
-    width: 40%;
-    height: 70%;
-    border-radius: 25px;
-    border: 1px solid black
-  }
+.rating{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star{
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.testimonial--indicators{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonial--indicators button{
+  background: none;
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.testimonial--indicators button.active{
+  width: 40px;
+  border-radius: 50px;
+  background: #fff;
+}
+
+/* Where we serve */
+
+.where--container{
+  width: 100%;
+  height: 780px;
+  background: url(assets/Untitled\ design\ \(3\).png);
+  background-size: cover;
+  -webkit-background-origin:border;
+}
+
+.where--items{
+  width: 100%;
+  height: 780px;
+  padding: 0 235px 0 235px;
+  display: flex;
+}
+
+.where--text{
+  width: 50%;
+  height: 780px;
+  display: inline-block;
+  padding-left: 200px;
+}
+
+.where--text h1{
+  font-size: 48px;
+  text-align: center;
+  padding-top: 35px;
+  padding-left: 40px;
+}
+
+.where--text h3{
+  text-align:left;
+  padding-left: 170px;
+  padding-bottom: 50px
+}
+
+.where--text h3:nth-of-type(1){
+  padding-top: 50px;
+}
+
+.where--image{
+  width: 50%;
+  height: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.where--image img{
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.where--textMobile{
+  display: none;
+}
+
+/* Contact us Today! */
+
+/* Footer */
 
   .footer {
     background-color: grey;
@@ -436,7 +557,6 @@
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
-    transition: ;
   }
 
   form button:hover {
@@ -444,7 +564,110 @@
     transition: .3s linear;
     color: #000010;
   }
+  @media screen and (max-width: 1430px){
+    .testimonial--background{
+      background: url(assets/Untitled\ design\ \(1\).png);
+    }
+
+    .where--container{
+      background: url(assets/Untitled\ design\ \(1\).png);
+    }
+
+    .where--items{
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .where--image{
+      display: block;
+    }
+
+    .where--textMobileHeader{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color:#e9edef;
+    }
+
+    .where-textMobileParagraph{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      background-color:#e9edef;
+    }
+
+    .where--text{
+      display: none;
+    }
+
+    .testing{
+      display: none;
+    }
+
+  }
+
 @media screen and (max-width: 980px) {
+
+  .testimonial--background{
+    background: url(assets/Untitled\ design\ \(1\).png);
+  }
+
+  .where--container{
+    background: url(assets/Untitled\ design\ \(1\).png);
+  }
+  
+  .where--items{
+    width: 50%;
+    margin: auto;
+  }
+
+  .where--image{
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0px;
+  }
+
+  .where--image img{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testing{
+    display: none;
+  }
+
+    .testimonial--container{
+      width: 50%;
+      margin: auto;
+    }
+
+    .testimonial--card{
+      flex-direction: column;
+    }
+
+    .testimonial--card--thumb{
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .testimonial--card--body{
+      width: 100%;
+      min-height: auto;
+      margin-left: 0;
+    }
+
 
     .menu-toggler{
         display:block;
