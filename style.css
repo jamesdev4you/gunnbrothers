@@ -383,7 +383,7 @@
 
 .where--text h3{
   text-align:left;
-  padding-left: 170px;
+  padding-left: 80px;
   padding-bottom: 50px
 }
 
@@ -409,6 +409,13 @@
   display: none;
 }
 
+.where--textMobileHeader{
+  display: none;
+}
+
+.where--textMobileParagraph{
+  display: none;
+}
 /* Contact us Today! */
 
 /* Footer */
@@ -521,6 +528,8 @@
     height: 100px;
   }
 
+  /* Contact Us Page */ 
+
   form{
     background: white;
     display: flex;
@@ -564,7 +573,324 @@
     transition: .3s linear;
     color: #000010;
   }
-  @media screen and (max-width: 1430px){
+
+  /* Insulation Page */
+  
+  .insulationPage {
+    padding-top:200px;
+  }
+
+  .insulation--background{
+    width: 100%;
+    height: 900px;
+    background-color:#9ecfe7
+  }
+
+  .insulation--boxholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    height: auto;
+  }
+
+  .insulation--boxone{
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 650px;
+    background-color: #e9edef;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+
+  .insulation--boxone--image{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .insulation--boxone--image img {
+    width: 90%;
+    border: 3px solid black;
+  }
+
+
+  .insulation--boxone--text{
+    width:100%;
+    height: 25%;
+    background-color: #275ea3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .insulation--boxone--text h1{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .insulation--boxone--text p{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .insulation--boxtwo{
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 650px;
+    background-color: #e9edef;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+
+  .insulation--boxtwo--image{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .insulation--boxtwo--image img {
+    width: 90%;
+    border: 3px solid black;
+  }
+
+
+  .insulation--boxtwo--text{
+    width:100%;
+    height: 25%;
+    background-color: #275ea3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .insulation--boxtwo--text h1{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .insulation--boxtwo--text p{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .insulation--boxthree{
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 650px;
+    background-color: #e9edef;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+
+  .insulation--boxthree--image{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .insulation--boxthree--image img {
+    width: 90%;
+    border: 3px solid black;
+  }
+
+
+  .insulation--boxthree--text{
+    width:100%;
+    height: 25%;
+    background-color: #275ea3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .insulation--boxthree--text h1{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .insulation--boxthree--text p{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  /* hvac page */ 
+  .hvacPage {
+    padding-top:200px;
+  }
+
+  .hvac--background{
+    width: 100%;
+    height: 900px;
+    background-color:#9ecfe7
+  }
+
+  .hvac--boxholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    height: auto;
+  }
+
+  .hvac--boxone{
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 650px;
+    background-color: #e9edef;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+
+  .hvac--boxone--image{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hvac--boxone--image img {
+    width: 90%;
+    border: 3px solid black;
+  }
+
+
+  .hvac--boxone--text{
+    width:100%;
+    height: 25%;
+    background-color: #275ea3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .hvac--boxone--text h1{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .hvac--boxone--text p{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .hvac--boxtwo{
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 650px;
+    background-color: #e9edef;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+
+  .hvac--boxtwo--image{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hvac--boxtwo--image img {
+    width: 90%;
+    border: 3px solid black;
+  }
+
+
+  .hvac--boxtwo--text{
+    width:100%;
+    height: 25%;
+    background-color: #275ea3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .hvac--boxtwo--text h1{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .hvac--boxtwo--text p{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .hvac--boxthree{
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 650px;
+    background-color: #e9edef;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+
+  .hvac--boxthree--image{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hvac--boxthree--image img {
+    width: 90%;
+    border: 3px solid black;
+  }
+
+
+  .hvac--boxthree--text{
+    width:100%;
+    height: 25%;
+    background-color: #275ea3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .hvac--boxthree--text h1{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .hvac--boxthree--text p{
+    text-align: center;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: 1627px){
     .testimonial--background{
       background: url(assets/Untitled\ design\ \(1\).png);
     }
@@ -573,46 +899,90 @@
       background: url(assets/Untitled\ design\ \(1\).png);
     }
 
+    .testing{
+      background-color:#e9edef;
+      padding: 15px;
+      margin-top: 60px;
+      border-radius: 15px;
+    }
+
     .where--items{
       padding: 0px;
+      margin: 0px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+    
+    .where--text{
+      background-color: #e9edef;
+      padding-left: 0px;
+      padding-top: 15px;
+      width: 30%;
+      height: 60%;
+      border-radius: 15px;
+    }
+
+    .where--text h1{
+      padding: 0;
+      margin: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .where--text h3{
+      padding-left: 50px;
+      padding-bottom: 10px;
+      margin: 0;
     }
 
     .where--image{
-      display: block;
+      margin-left: 100px;
     }
 
-    .where--textMobileHeader{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 40px;
-      padding: 5px;
-      border-radius: 5px;
-      background-color:#e9edef;
+    .insulation--background{
+      height: 1000px;
     }
 
-    .where-textMobileParagraph{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-      padding: 15px;
-      border-radius: 5px;
-      background-color:#e9edef;
+    .insulation--boxone--image img{
+      height: 90%;
+      width: 100%;
+      min-width: 200px;
     }
 
-    .where--text{
-      display: none;
+    .insulation--boxtwo--image img{
+      height: 90%;
+      width: 100%;
+      min-width: 200px;
     }
 
-    .testing{
-      display: none;
+    .insulation--boxthree--image img{
+      height: 90%;
+      width: 100%;
+      min-width: 200px;
+    }
+   
+    .hvac--background{
+      height: 1000px;
     }
 
+    .hvac--boxone--image img{
+      height: 90%;
+      width: 100%;
+      min-width: 200px;
+    }
+
+    .hvac--boxtwo--image img{
+      height: 90%;
+      width: 100%;
+      min-width: 200px;
+    }
+
+    .hvac--boxthree--image img{
+      height: 90%;
+      width: 100%;
+      min-width: 200px;
+    }
   }
 
 @media screen and (max-width: 980px) {
@@ -626,22 +996,55 @@
   }
   
   .where--items{
-    width: 50%;
-    margin: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .where--text{
+    display: none;
   }
 
   .where--image{
-    width: 100%;
-    margin-right: 0;
-    padding-right: 0px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .where--image h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9edef;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+
+  .where--image h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9edef;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 20px;
   }
 
   .where--image img{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    height: 300px;
   }
 
   .testing{
@@ -716,4 +1119,125 @@
         padding-top: 15px;
     }
 
+    .insulation--boxholder{
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-around;
+      height: 2500px;
+    }
+
+    .insulation--background{
+      height: 2500px;
+    }
+
+    .insulation--boxone {
+      width: 60%;
+      height: 700px;
+    }
+
+    .insulation--boxtwo {
+      width: 60%;
+      height: 700px;
+    }
+
+    .insulation--boxthree {
+      width: 60%;
+      height: 700px;
+    }
+
+    .hvac--boxholder{
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-around;
+      height: 2500px;
+    }
+
+    .hvac--background{
+      height: 2500px;
+    }
+
+    .hvac--boxone {
+      width: 60%;
+      height: 700px;
+    }
+
+    .hvac--boxtwo {
+      width: 60%;
+      height: 700px;
+    }
+
+    .hvac--boxthree {
+      width: 60%;
+      height: 700px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+  .insulation--boxthree--image img {
+    width: 200px;
+    height: 80%;
+    border: 3px solid black;
+  }
+
+  .insulation--boxthree {
+    width: 90%;
+    height: 600px;
+  }
+
+  .insulation--boxone--image img {
+    width: 200px;
+    height: 80%;
+    border: 3px solid black;
+  }
+
+  .insulation--boxone {
+    width: 90%;
+    height: 600px;
+  }
+
+ .insulation--boxtwo{
+  width: 90%;
+  height: 600px;
+ }
+
+ .insulation--boxtwo--image img {
+  width: 200px;
+  height: 80%;
+  border: 3px solid black;
+}
+
+.hvac--boxthree--image img {
+  width: 200px;
+  height: 80%;
+  border: 3px solid black;
+}
+
+.hvac--boxthree {
+  width: 90%;
+  height: 600px;
+}
+
+.hvac--boxone--image img {
+  width: 200px;
+  height: 80%;
+  border: 3px solid black;
+}
+
+.hvac--boxone {
+  width: 90%;
+  height: 600px;
+}
+
+.hvac--boxtwo{
+width: 90%;
+height: 600px;
+}
+
+.hvac--boxtwo--image img {
+width: 200px;
+height: 80%;
+border: 3px solid black;
+} 
 }
