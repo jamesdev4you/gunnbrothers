@@ -104,6 +104,7 @@
     text-align: center;
     height: 50px;
     cursor: pointer;
+    color: black;
 }
 
 .phoneImg{
@@ -438,6 +439,10 @@
     flex-direction: row;
     width: 33.33%;
     height: auto;
+  }
+
+  .basic--info a{
+    min-width: 100px;
   }
 
   .Information{
@@ -949,6 +954,20 @@
     border: 3px solid black;
   }
 
+  .contactPage{
+    padding-top:200px;
+    background-color:#9ecfe7;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactPage iframe{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media screen and (max-width: 1627px){
     .testimonial--background{
       background: url(assets/Untitled\ design\ \(1\).png);
@@ -1097,6 +1116,32 @@
     }
 
 
+  }
+
+  @media screen and (max-width: 1400px){
+    .insulation--boxone, .insulation--boxtwo, .insulation--boxthree{
+      height: 500px;
+    }
+
+    .insulation--background{
+      height: 700px;
+    }
+
+    .insulation--boxone--text, .insulation--boxtwo--text, .insulation--boxthree--text{
+      font-size: 12px;
+    }
+
+    .hvac--boxone, .hvac--boxtwo, .hvac--boxthree{
+      height: 500px;
+    }
+
+    .hvac--background{
+      height: 700px;
+    }
+
+    .hvac--boxone--text, .hvac--boxtwo--text, .hvac--boxthree--text{
+      font-size: 12px;
+    }
   }
 
 @media screen and (max-width: 980px) {
@@ -1259,6 +1304,15 @@
       height: 700px;
     }
 
+    .insulation--boxone--text, .insulation--boxtwo--text, .insulation--boxthree--text{
+      font-size: 16px;
+    }
+
+    .hvac--boxone--text, .hvac--boxtwo--text, .hvac--boxthree--text{
+      font-size: 16px;
+    }
+
+
     .hvac--boxholder{
       flex-direction: column;
       align-items: space-around;
@@ -1291,7 +1345,117 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px){
+
+
+  .Information{
+    display: none;
+  }
+  
+  .footer{
+    background-color: #9ecfe7;
+    justify-content: space-around;
+  }
+
+  .socials{
+    width: 50%;
+  }
+
+  .basic--info{
+    width: 50%;
+  }
+
+  .insulation--boxtwo--image {
+    width: 55%;
+    height: 70%;
+  }
+
+  .insulation--boxtwo--text {
+    height: 30%;
+  }
+
+  .insulation--boxone--image {
+    width: 55%;
+    height: 70%;
+  }
+
+  .insulation--boxone--text {
+    height: 30%;
+  }
+
+  .insulation--boxthree--image {
+    width: 55%;
+    height: 70%;
+  }
+
+  .insulation--boxthree--text {
+    height: 30%;
+  }
+
+  .hvac--boxtwo--image {
+    width: 55%;
+    height: 70%;
+  }
+
+  .hvac--boxtwo--text {
+    height: 30%;
+  }
+
+  .hvac--boxone--image {
+    width: 55%;
+    height: 70%;
+  }
+
+  .hvac--boxone--text {
+    height: 30%;
+  }
+
+  .hvac--boxthree--image {
+    width: 55%;
+    height: 70%;
+  }
+
+  .hvac--boxthree--text {
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .insulation--boxone--image {
+    width: 65%;
+    height: 70%;
+  }
+
+  .insulation--boxtwo--image {
+    width: 65%;
+    height: 70%;
+  }
+
+  .insulation--boxthree--image {
+    width: 65%;
+    height: 70%;
+  }
+
+  .hvac--boxone--image {
+    width: 65%;
+    height: 70%;
+  }
+
+  .hvac--boxtwo--image {
+    width: 65%;
+    height: 70%;
+  }
+
+  .hvac--boxthree--image {
+    width: 65%;
+    height: 70%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 630px) {
 
 
   .insulation--boxthree--image img {
@@ -1325,6 +1489,14 @@
   width: 200px;
   height: 80%;
   border: 3px solid black;
+}
+
+.insulation--boxone--text, .insulation--boxtwo--text, .insulation--boxthree--text{
+  font-size: 14px;
+}
+
+.hvac--boxone--text, .hvac--boxtwo--text, .hvac--boxthree--text{
+  font-size: 14px;
 }
 
 .hvac--boxthree--image img {
@@ -1388,5 +1560,20 @@ border: 3px solid black;
 .about--background h1{
   font-size: 24px;
 }
+
+}
+
+@media screen and (max-width: 400px) {
+  .Socials{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .basic--info{
+    display: none;
+  }
 
 }
