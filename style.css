@@ -62,6 +62,18 @@ a{
   background-color: #000010;
 }
 
+.red{
+  width: 100%;
+  background-color: #4b5354;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red > h3 {
+  margin-right: 15px;
+}
 
 .logo{
     width: 200px;
@@ -100,7 +112,7 @@ a{
     background-position: center;
     width: 20px;
     height: 20px;
-    margin-right: 15px;
+    margin-right: 10px;
     cursor: pointer;
     transition: .3s linear;
 }
@@ -121,7 +133,8 @@ a{
 }
 
 .homePage{
-    background-color: #9ecfe7;
+  padding-top: 50px; 
+  background-color: #9ecfe7;
 }
 
 .gunnBanner {
@@ -1252,9 +1265,30 @@ a{
     left: 0;
    }
 
+   .about--background{
+    padding-top: 150px;
+   }
+
+   .contact-under-nav{
+    position: fixed;
+   }
+
    .homePage{
     padding-top: 150px;
    }
+
+   .hvacPage{
+    padding-top: 150px;
+   }
+
+   .insulationPage{
+    padding-top: 150px;
+   }
+
+   .aboutPage{
+    padding-top: 150px;
+   }
+
     form h3{
         padding-top: 15px;
     }
@@ -1328,18 +1362,14 @@ a{
 
 @media screen and (max-width: 850px){
 
-
-  .Information{
-    display: none;
-  }
   
   .footer{
     background-color: #9ecfe7;
     justify-content: space-around;
   }
 
-  .socials{
-    width: 50%;
+  .Socials{
+    display: none;
   }
 
   .basic--info{
