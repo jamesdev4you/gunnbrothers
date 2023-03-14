@@ -8,28 +8,60 @@
 
 /* NavBar */
 
+li{
+  list-style: none;
+}
+
+a{
+  color: #000010;
+  text-decoration: none;
+}
+
 .navbar{
-    position: fixed;
-    background-color: #e9edef;
-    width: 100%;
-    padding: 0;
-    top: 0;
-    z-index: 999;
-    transition: .3s linear;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: #e9edef;
+  z-index:999;
 }
 
-.inner-width{
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 40px;
-    background-color: #e9edef;
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  z-index:999;
 }
 
-.navbar .inner-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} 
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: dodgerblue;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000010;
+}
+
 
 .logo{
     width: 200px;
@@ -38,55 +70,6 @@
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.menu-toggler{
-    background: none;
-    width: 30px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    outline: none;
-    z-index: 999;
-    display: none;
-}
-
-.menu-toggler span{
-    display: block;
-    height: 3px;
-    background-color: #9ecfe7;
-    margin: 6px 0;
-    position: relative;
-    transition: .3s linear;
-}
-
-.navbar-menu a{
-    color: rgb(0, 0, 0);
-    font-size: 19px;
-    font-weight: 500;
-    margin-left: 30px;
-    transition: .2s linear;
-}
-
-.navbar-menu a:hover {
-    color: #9ecfe7 !important;
-}
-
-.sticky {
-    background-color: #e9edef;
-    padding: 0px 0;
-}
-
-.sticky .logo {
-    background-image: url(assets/output-onlinepngtools.png);
-}
-
-.sticky .navbar-menu a{
-    color: #111;
-}
-
-.sticky .menu-toggler span{
-    background-color: #111;
 }
 
 .container {
@@ -138,7 +121,6 @@
 }
 
 .homePage{
-    padding-top: 200px;
     background-color: #9ecfe7;
 }
 
@@ -418,7 +400,11 @@
   display: none;
 }
 /* Contact us Today! */
-
+.contactPage{
+  padding-top: 200px;
+  background-color: #9ecfe7;
+  padding-bottom: 200px;
+}
 /* Footer */
 
   .footer {
@@ -581,9 +567,6 @@
 
   /* Insulation Page */
   
-  .insulationPage {
-    padding-top:200px;
-  }
 
   .insulation--background{
     width: 100%;
@@ -739,9 +722,7 @@
   }
 
   /* hvac page */ 
-  .hvacPage {
-    padding-top:200px;
-  }
+
 
   .hvac--background{
     width: 100%;
@@ -901,9 +882,7 @@
 
   /* about us page*/
   
-  .aboutPage{
-    padding-top:200px;
-  }
+
 
   .about--background{
     height: 800px;
@@ -958,7 +937,6 @@
   }
 
   .contactPage{
-    padding-top:200px;
     background-color:#9ecfe7;
     display:flex;
     align-items: center;
@@ -1233,50 +1211,50 @@
       margin-left: 0;
     }
 
-
-    .menu-toggler{
-        display:block;
+    .hamburger{
+      display: block;
     }
-
-    .navbar-menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        background-color: #4b5354;
-        top: 0;
-        right: -100%;
-        padding: 80px 50px;
-        transition: .3s linear;
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
     }
-
-    .navbar-menu a{
-        display: block;
-        font-size: 30px;
-        margin: 30px 0;
+  
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
     }
+  
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+   }
+  
+   .navbar{
+    position: fixed;
+    width: 100%;
+   }
 
-    .sticky .navbar-menu{
-        background-color: #275ea3;
-    }
+   .nav-menu{
+      position: fixed; 
+      left: -100%;
+      top: 150px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #4b5354;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+   }
+  
+   .nav-item{
+      margin: 16px 0;
+   }
+  
+   .nav-menu.active{
+    left: 0;
+   }
 
-    .navbar-menu.active{
-        right: 0;
-    }
-
-    .menu-toggler.active span:nth-child(1){
-        transform: rotate(-45deg);
-        top: 4px;
-    }
-
-    .menu-toggler.active span:nth-child(2){
-        opacity: 0;
-    }
-
-    .menu-toggler.active span:nth-child(3){
-        transform: rotate(45deg);
-        bottom: 14px;
-    }
-
+   .homePage{
+    padding-top: 150px;
+   }
     form h3{
         padding-top: 15px;
     }

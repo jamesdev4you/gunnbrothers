@@ -1,14 +1,14 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 20)
-            $(".navbar").addClass("sticky");
-        else
-            $(".navbar").removeClass("sticky");
-    });
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-    $('.menu-toggler').click(function(){
-        $(this).toggleClass("active");
-        $(".navbar-menu").toggleClass("active");
-    });
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));;
+
 
