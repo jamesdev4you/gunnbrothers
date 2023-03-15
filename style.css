@@ -22,7 +22,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding-bottom: 0 24px;
   background-color: #e9edef;
   z-index:999;
 }
@@ -132,8 +132,7 @@ a{
     text-align: center;
 }
 
-.homePage{
-  padding-top: 50px; 
+.homePage{ 
   background-color: #9ecfe7;
 }
 
@@ -1274,7 +1273,7 @@ a{
    }
 
    .homePage{
-    padding-top: 150px;
+    padding-top: 10px;
    }
 
    .hvacPage{
